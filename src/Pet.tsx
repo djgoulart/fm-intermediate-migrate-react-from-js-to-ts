@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
+import { Animal } from "./APIResponsesTypes";
 
 interface IProps {
   name: string, 
-  animal: string, 
+  animal: Animal, 
   breed: string,
   images: string[],
   location: string,
