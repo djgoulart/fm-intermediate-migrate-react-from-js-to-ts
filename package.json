@@ -8,7 +8,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet"
   },
-  "author": "Brian Holt <btholt+citr-v7-project@gmail.com>",
+  "author": "Diego Goulart <diegogoulart.aws@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "7.16.7",
