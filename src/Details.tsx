@@ -4,26 +4,26 @@ import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 import Modal from "./Modal";
-import { PetAPIResponse, Animal } from './APIResponsesTypes';
+import { PetAPIResponse, Animal } from "./APIResponsesTypes";
 
 class Details extends Component<{ params: { id?: string } }> {
   state = {
     loading: true,
     showModal: false,
-    animal: '' as Animal,
-    breed: '',
-    city: '',
-    state: '',
-    description: '',
-    name: '',
+    animal: "" as Animal,
+    breed: "",
+    city: "",
+    state: "",
+    description: "",
+    name: "",
     images: [] as string[],
   };
 
   async componentDidMount() {
-    if(!this.props.params.id) {
+    if (!this.props.params.id) {
       return;
     }
-    
+
     const res = await fetch(
       `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`
     );
@@ -78,7 +78,7 @@ class Details extends Component<{ params: { id?: string } }> {
 }
 
 const WrappedDetails = () => {
-  const params = useParams<{id: string}>();
+  const params = useParams<{ id: string }>();
   return (
     <ErrorBoundary>
       <Details params={params} />

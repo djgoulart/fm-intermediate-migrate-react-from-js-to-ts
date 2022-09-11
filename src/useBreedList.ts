@@ -4,7 +4,7 @@ import { Animal, BreedListAPIresponse } from "./APIResponsesTypes";
 type Status = "unloaded" | "loading" | "loaded";
 
 const localCache: {
-  [index: string]: string[]
+  [index: string]: string[];
 } = {};
 
 export default function useBreedList(animal: Animal) {

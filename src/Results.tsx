@@ -3,7 +3,7 @@ import { Pet as PetType } from "./APIResponsesTypes";
 import Pet from "./Pet";
 
 interface IProps {
-  pets: PetType[]
+  pets: PetType[];
 }
 
 const Results: FunctionComponent<IProps> = ({ pets }) => {
